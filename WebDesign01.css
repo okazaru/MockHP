@@ -1,0 +1,378 @@
+
+body{
+background-image:url("img/74151230.jpg");
+width:1200px;
+height:1000px;
+ border:transparent 90px solid ;
+}
+
+
+
+
+h2{
+text-align:center;
+font-family: 'Lobster', cursive;
+font-size:38px;
+}
+
+a{
+text-decoration:none;
+}
+a:link { color : #808080; }
+a:visited { color : #808080; }
+a:hover{
+color:#000000;
+}
+
+
+
+#News{
+margin-top:50px;
+}
+
+#Technology{
+margin-top:400px;
+}
+
+
+.header::after{
+content: "";
+clear: both;
+display: block;
+}
+
+.font01{
+float:right;
+font-family: 'Lobster', cursive;
+font-size:50px;
+margin-right:150px;
+margin-top:20px;
+}
+
+.head-img{
+float:left;
+margin-left:100px;
+}
+
+
+.navi li{
+
+list-style:none;
+display: inline;
+font-family: 'Lobster', cursive;
+font-size:25px;
+margin:20px;
+padding:20px;
+margin-right:10px;
+border-top: 2px solid #d2b48c;
+border-bottom: 2px solid #d2b48c;
+}
+
+.navi li:hover{
+color:#000000;
+}
+
+.back-slide{
+position:absolute;
+top:410px;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin-left:20px;
+  text-decoration: none;
+  border-radius: 4px;
+  width:200px;
+  height:50px;
+  color: #ffffff;
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+
+.button:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+.val{
+float:left;
+
+}
+
+.values{
+font-weight:bold;
+font-size:20px;
+margin:auto;
+
+}
+
+.yen{
+font-size:35px;
+color:#1e90ff;
+}
+
+button{
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  font-size:20px;
+  text-decoration: none;
+  color: white;
+  width:200px;
+  height:50px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.73);
+  padding: 0.3em 0.5em;
+  background: #00bcd4;
+  border-top: solid 3px #00a3d4;
+  border-bottom: solid 3px #00a3d4;
+  transition: .4s;
+}
+
+button:hover {
+  text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83),
+               6px 0px 15px rgba(255, 255, 240, 0.83);
+}
+
+.size01{
+float:left;
+}
+
+.size02{
+float:right;
+}
+
+.tech01{
+float:left;
+}
+
+.tech02{
+float:left;
+margin-left:40px;
+}
+
+.tech-p01{
+float:left;
+width: 230px;
+height:230px;
+margin-left:50px;
+ font-weight: bold;
+}
+
+.tech-p02{
+float:right;
+width: 220px;
+height:220px;
+ font-weight: bold;
+}
+
+.tech-flo::after{
+content: "";
+clear: both;
+display: block;
+}
+
+.news-p{
+font-size:18px;
+font-weight:bold;
+width:270px;
+height:250px;
+}
+
+
+.grad-wrap {
+  position: relative;
+}
+.grad-wrap + .grad-wrap {
+  margin-top: 40px;
+}
+.grad-btn {
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  bottom:0;
+  left: 0;
+  width: 148px;
+  margin: auto;
+  padding: .5em 0;
+  border-radius: 2px;
+  background: #87cefa;
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+  cursor: pointer;
+  transition: .2s ease;
+  box-shadow: 0 0 3px rgba(0,0,0,.3); 
+ border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;}
+.grad-btn::after {
+  content: "もっと読む"
+}
+.grad-btn:hover {
+  background: #fff;
+  color: #009e8f;
+}
+.grad-btn .fa {
+  margin-right: .5em;
+}
+.grad-item {
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+}
+
+.grad-item::before {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+ }
+.grad-trigger {
+  display: none;
+}
+.grad-trigger:checked ~ .grad-btn {
+  bottom: -2em;
+}
+.grad-trigger:checked ~ .grad-btn::after {
+  content: "閉じる"
+}
+.grad-trigger:checked ~ .grad-btn .fa {
+  transform: rotate(180deg);
+}
+.grad-trigger:checked ~ .grad-item {
+  height: auto;
+}
+.grad-trigger:checked ~ .grad-item::before {
+  display: none;
+}
+
+.inp01{
+width:300px;
+height:50px;
+margin:20px;
+}
+
+.inp02{
+width:300px;
+height:50px;
+margin:20px;
+}
+
+.inp03{
+width:300px;
+height:50px;
+margin:20px;
+}
+
+.inp04{
+width:300px;
+height:50px;
+margin:20px;
+}
+
+.evaluation{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.evaluation input[type='radio']{
+  display: none;
+}
+.evaluation label{
+  position: relative;
+  padding: 10px 10px 0;
+  color: white;
+  cursor: pointer;
+  font-size: 50px;
+}
+.evaluation label .text{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+  color: gray;
+}
+.evaluation label:hover,
+.evaluation label:hover ~ label,
+.evaluation input[type='radio']:checked ~ label{
+  color: #696969;
+}
+
+textarea{
+resize:none;
+}
+
+
+#admit{
+  display: inline-block;
+  border-radius : 5%;
+  font-size: 18pt;
+  cursor: pointer;
+  padding: 12px 12px; 
+  background : #3cb371; 
+  color: #ffffff; 
+  line-height   : 1em; 
+  transition: .3s;
+  }
+
+#admit:hover{
+ box-shadow    : none; 
+   color: #90ee90; 
+  background    : #66cdaa;
+  }
+
+.buttona{
+text-align:center;
+}
+
+.Location{
+float:right;
+}
+
+.Contact{
+float:left;
+}
+
+.LocCon::after{
+content: "";
+clear: both;
+display: block;
+}
+
+.tax{
+font-size:50%;
+}
+
+
+
+.foot li{
+list-style:none;
+display: inline;
+font-family: 'Lobster', cursive;
+font-size:25px;
+margin:10px;
+padding:20px;
+margin-right:10px;
+border-top: 2px solid #d2b48c;
+border-bottom: 2px solid #d2b48c;
+}
+
+.foot li:hover{
+color:#000000;
+}
+
+.footer{
+background-color:#c0c0c0;
+padding:5px;
+}
+
+
+

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Web課題</title>
+<link rel="stylesheet" href="load.css" type="text/css"/>
+<link rel="stylesheet" href="WebDesign01.css" type="text/css"/>
+<link rel="stylesheet" href="accordion.css" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="readmore.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+<script>
+    jQuery(function () {
+        $('.open').readmore({
+            speed:100,
+            collapsedHeight: 105,
+            moreLink: '<a class="btn" href="#"><i>もっと読む</span></i>',
+            lessLink: '<a class="btn_close" href="#"><i>閉じる</i></a>'
+        });
+    });
+    </script>
+    
+  <script>
+ $(function() {
+  $('.range-group').each(function() {
+    for (var i = 0; i < 5; i ++) {
+      $(this).append('<a>');
+    }
+  }); 
+  $('.range-group>a').on('click', function() {
+     var index = $(this).index();
+    $(this).siblings().removeClass('on');
+     for (var i = 0; i < index; i++) {
+        $(this).parent().find('a').eq(i).addClass('on'); 
+     }
+    $(this).parent().find('.input-range').attr('value', index);
+  });
+});    </script>
+</head>
+
+<body>
+
+<div class="header">
+<div class="head-img">
+<img src="img/logo.png" alt="" width="250" height="150">
+</div>
+<div class="font01"><h2 id="Top">For Your Mountain
+</div>
+</div>
+
+
+<ul class="navi">
+<li><a href="#Top">Top</a></li>
+<li><a href="#Product">Product</a></li>
+<li><a href="#Size">Size</a></li>
+<li><a href="#Technology">Technology</a></li>
+<li><a href="#News">News</a></li>
+<li><a href="#Company">Company</a></li>
+<li><a href="#Contact">Contact</a></li>
+<li><a href="#Location">Location</a></li>
+</ul>
+
+
+<h2 id="Product">Product</h2>
+<div class="swiper-container">
+	<!-- メイン表示部分 -->
+	<div class="swiper-wrapper">
+		<!-- 各スライド -->
+		<div class="swiper-slide"><img alt="" src="img/FUTURA_600100.jpg" width="400" height="400" >
+		<div class="val"><p class="values">価格:<div class="yen">¥23,100 <div class="tax"> (税別)</div></div></div>
+		</p>
+<div class="cp_actab01">
+<input id="tab-one" type="checkbox" name="tabs">
+<label for="tab-one">FUTURA</label>
+<div class="cp_actab-content">
+<p><strong>攻撃的に進化した新世代を代表する一足</strong><br />
+
+優れた足裏感覚を生むNO-EDGEコンセプトを採用したフューチュラがモデルチェンジしました。
+足全体を締めこむファストレーシングシステムはそのままに、アッパーのボリュームを抑えることでフィット感がアップ。ヒールカップは細身に変更してフック時のズレをなくしましたが、スリングショットを緩めにすることで履き心地のよさは変わりません。また、つま先を細くし、ターンインを強めることで、これまでより細かいフットホールドを拾えるように。
+スメアリング、スメッジングには定評のあるフューチュラが、より細かいエッジグにも対応できるようになりました。</p>
+</div>
+</div>
+</div>
+
+		<div class="swiper-slide"><img alt="" src="img/SPEEDSTER_ly.jpg" width="400" height="400" >
+		<div class="val"><p class="values">価格:<div class="yen">¥19,500 <div class="tax">(税別)</div></div></div></p>
+		<div class="cp_actab01">
+<input id="tab-two" type="checkbox" name="tabs">
+<label for="tab-two">SPEEDSTER</label>
+<div class="cp_actab-content">
+<p><strong>究極の足裏感覚</strong><br />
+
+薄いソールと非常にやわらかいアッパー、そしてNO-EDGEコンセプトが足とホールドの間隔を最小限にし、抜群の足裏感覚を実現したモデルです。足との一体感はスポルティバのラインナップのなかでも随一を誇ります。トウフック、ピンチフット、縦方向のかき込みと多様な足技を要する強傾斜で真価を発揮します。</p>
+</div>
+</div>
+</div>
+		<div class="swiper-slide"><img alt="" src="img/SOLUTION_000100.jpg" width="400" height="400">
+		<div class="val"><p class="values">価格:<div class="yen">¥21,400 <div class="tax">(税別)</div></div></div></p>
+<div class="cp_actab01">
+<input id="tab-three" type="checkbox" name="tabs">
+<label for="tab-three">SOLUTION</label>
+<div class="cp_actab-content">
+<p><strong>現代のシーンに合わせて進化した大定番</strong><br />
+
+現在のクライミングシーンではスメアリング性能が問われることが増えました。新しいソリューションはグリップ力を強化。シューズ全体をソフトにすることで、エッジングとスメアリングのバランスを重視し、スポートクライミングのあらゆるシーンに対応するモデルとして進化しました。ダウントウ、ターンインを長く維持するP3構造やロックハーネスシステムなどの機能は変更ありません。</p>
+</div>
+</div>
+</div>
+		<div class="swiper-slide"><img alt="" src="img/TARANTURA_600600.jpg" width="400" height="400">
+		<div class="val"><p class="values">価格:<div class="yen">¥14,000 <div class="tax">(税別)</div></div></div></p>
+<div class="cp_actab01">
+<input id="tab-four" type="checkbox" name="tabs">
+<label for="tab-four">TARANTULA</label>
+<div class="cp_actab-content">
+<p><strong>ビギナーのスキルアップを快適にフォローする</strong><br />
+
+足入れ感のよさ、クセのない履き心地、高い耐久性と三拍子そろったエントリー層向けモデルです。蜘蛛の巣をイメージさせる特徴的なアッパーのベルクロデザインは、見た目の楽しさだけでなくサポート性も向上させています。ソールに使われているFriXion RSは耐久性が高く、毎週のように使用しても長持ちしてくれます。</p>
+</div>
+</div>
+</div>
+	</div>
+	
+	
+<script>
+var mySwiper = new Swiper('.swiper-container', {
+	spaceBetween: 5,
+	slidesPerView: 3,
+	loop: true,
+	
+	
+		
+});
+</script>
+<h2 id="Size">Size</h2>
+<div class="size">
+<div class="size01"><img alt="" src="img/sizingsheet.jpg" alt="画像" width="630" height="350"></div>
+<div class="size02"><img alt="" src="img/size2_lasportiva.gif" alt="画像" width="550" height="350"></div>
+</div>
+
+<h2 id="Technology">Technology</h2>
+<div class="tech-flo">
+<div class="tech01"><img alt="" src="img/pic_climbing_01.png" alt="画像" width="300" height="400"></div>
+		<p class="tech-p01">
+足の形態学の詳細な研究と、異なる形状やサイズの岩に足を置くクライミングのあらゆる状況を想定し、「ノーエッジ」が考案されました。従来当たり前だったアウトソールのエッジをあえてなくすことでよりスムーズで正確なクライミングが可能になっています。岩に触れる接地面積が広く、均一なプレッシャーで岩に立つことができるため、順応性に優れ、繊細な動きにも適しています。</p>
+<div class="tech02"><img alt="" src="img/119420861.png" alt="画像" width="350" height="350"></div>
+		<p class="tech-p02">
+[従来のシステム]
+足首が柔軟に動かない登山靴の場合。接地面がわずかしかない
+​
+足首をきっちりホールドしながら、自由度を大幅に高めるシステム。可動域が広がることで登り、下り、トラバース時においても、フラットフッティングがしやすく安全に行動することができます。</p>
+</div>
+
+<h2 id="News">News</h2>
+<div class="swiper-container cont02">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<img alt="" src="img/DSC_0717-5.jpg" width="250" height="280" >
+</div>
+<div class="swiper-slide"><p class="news-p">
+日光マウンテンランニング大会ブース出展
+​
+11月11日(日)に開催される日光マウンテンランニング大会にブース初出展！
+アウトレットモデルのトレランシューズの販売や18FWシーズンの展開モデルの展示などを行います。
+ランナーの皆様是非、スポルティバのブースへお立ち寄りください！</p>
+</div>
+<div class="swiper-slide">
+<img alt="" src="img/logo1803.jpg" width="250" height="250" >
+</div>
+<div class="swiper-slide"><p class="news-p">TOAD5出展情報
+4月6日(土)〜7日(日)に青梅で開催されますTOAD５の出展情報です。
+トレランののスピードモデルの一時代を築いたブシドーがアップグレードしてリリース！</p>
+	
+</div>
+</div>
+<div class="swiper-button-prev prev02"></div>
+<div class="swiper-button-next next02"></div>
+<div class="swiper-pagination pagi02"></div>
+</div>
+<script>
+var mySwiper2 = new Swiper('.cont02', {
+	slidesPerView: 4,
+	slidesPerGroup: 2,
+	loop: true,
+	navigation:
+		{
+			nextEl:'.next02',
+			prevEl:'.prev02'
+			},
+		pagination:
+			{
+			el:'.pagi02',type:'bullets',clickable:true}});
+</script>
+<h2 id="Company">Company</h2>
+
+<div class="grad-wrap">
+    <input id="trigger1" class="grad-trigger" type="checkbox">
+    <label class="grad-btn" for="trigger1"></label>
+    <div class="grad-item">スポルティバ社は北イタリア、ドロミテ山麓のVal di Fiemmeで創業し、85年に亘り、その魅惑的な自然に囲まれた場所で山靴の開発・製造を続けています。
+この信じられないくらいに恵まれた環境にいると、本来あるべき姿の社会や自然を守っていく責任があることを強く感じられるようになります。このような地理的背景もあり、我々は常に自然環境を大切にする企業であり続けようと考えています。
+
+現在、イタリア本社には最高水準の自社工場が稼働しています。
+地理的な利便性やコストダウンのために、ほとんどのメーカーが生産拠点を海外に移したり、外部委託をするイタリアのフットウェア業界にあって、創業以来、この小さな自社工場から製品を送り出し続けているのは極めて珍しいと言えるのではないでしょうか。
+
+この工場では製品の製造が周囲の美しい山々や素晴らしい自然に対して、いかなる負荷もかけないように情熱をもって対策に取り組んでいます。環境保護に関する法律の順守や他社に先駆けてISO9001、ISO14001の認証を取得したのも、その熱意の現れです。また実際の製造工程においては廃棄物のリサイクル、ソーラー発電、CO2の廃棄濾過、100%再生可能エネルギーの使用など社員全員がエコフレンドリーなメーカーとなるべく努力を続けています。
+既存の製造工程を厳しく見直すだけでなく、環境にマイナスの影響を与えずにお客様に最高の製品を提供する新たな製法の開発にも余念がありません</div>
+</div>
+
+
+<div class="LocCon">
+<div class="Location">
+<h2 id="Location">Location</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.3256203352585!2d139.7828143153897!3d35.718209580185714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188e90eff9e98d%3A0xcb62492926d8f97d!2sLA+SPORTIVA+JAPAN!5e0!3m2!1sja!2sjp!4v1562811423567!5m2!1sja!2sjp" width="400" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div class="Contact">
+<h2 id="Contact">Contact</h2>
+
+<form name="Form"  method="post" action="mailc.php">
+<input type="text" name="FirstName" class="inp01" placeholder="FirstName">
+<input type="text" name="LastName" class="inp02" placeholder="LastName"><br />
+<input type="mail" name="Mail" class="inp03" placeholder="Address">
+<input type="tel" name="Tel" class="inp04" placeholder="PhoneNumber"><br />
+  <div class="evaluation">
+    <input id="star1" type="radio" name="star" value="5" />
+    <label for="star1"><span class="text"></span>★</label>
+    <input id="star2" type="radio" name="star" value="4" />
+    <label for="star2"><span class="text"></span>★</label>
+    <input id="star3" type="radio" name="star" value="3" />
+    <label for="star3"><span class="text"></span>★</label>
+    <input id="star4" type="radio" name="star" value="2" />
+    <label for="star4"><span class="text"></span>★</label>
+    <input id="star5" type="radio" name="star" value="1" />
+    <label for="star5"><span class="text"></span>★</label>
+  </div>
+  <textarea name="Comment" cols="95" rows="10" placeholder="Comment"></textarea><br />
+<div class="buttona">
+  <input type="submit" name="Admit" id="admit" value="Admit">
+  </div>
+   </form>
+  </div>
+  </div>
+
+
+<div class="footer">
+
+<ul class="foot">
+<li><a href="#Top">Top</a></li>
+<li><a href="#Product">Product</a></li>
+<li><a href="#Size">Size</a></li>
+<li><a href="#Technology">Technology</a></li>
+<li><a href="#News">News</a></li>
+<li><a href="#Company">Company</a></li>
+<li><a href="#Contact">Contact</a></li>
+<li><a href="#Location">Location</a></li>
+</ul>
+</div>
+
+</body>
+</html>
